@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=1024"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlsberg</title>
+  <meta name="keywords" content="Carlsberg" />
+  <meta name="description" content="Carlsberg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@latest/dist/jquery.formstyler.css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-logo">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo" class="header-logo-image">
+        </a>
+      </div>
+      <div class="header-content">
+        <div class="container">
+          <div class="header-content-wrapper">
+            <div class="header-info">
+              <div class="header-info-item">
+                <div class="header-info-item-title color-dark">
+                  Cегодня:
+                </div>
+                <div class="header-info-item-text">
+                  20 июля 2021, вторник
+                </div>
+              </div>
+              <div class="header-info-item header-info-item__weather">
+                <svg class="header-info-icon">
+                  <use xlink:href="svg/svg/symbols.svg#sun" />
+                </svg>
+                <div class="header-info-item-text">
+                  +22°
+                </div>
+                <div class="header-info-item-text">
+                  Ясно
+                </div>
+              </div>              
+            </div>
+            <div class="header-currency">
+              <div class="header-currency-item">
+                <img src="./images/bank.png" alt="bank" loading="lazy" class="header-currency-icon">  
+                <div class="header-currency-item-text">
+                  МРЭП
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  12921,67
+                </div>
+              </div>
+              <div class="header-currency-item">
+                <img src="./images/usd.png" alt="usd" loading="lazy" class="header-currency-icon">              
+                <div class="header-currency-item-text">
+                  USD
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  12921,67
+                </div>
+              </div>
+              <div class="header-currency-item">
+                <img src="./images/eur.png" alt="eur" loading="lazy" class="header-currency-icon"> 
+                <div class="header-currency-item-text">
+                  EUR
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  12921,67
+                </div>
+              </div>
+              <div class="header-currency-item">                
+                <img src="./images/rub.png" alt="rub" loading="lazy" class="header-currency-icon">           
+                <div class="header-currency-item-text">
+                  RUB
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  126,67
+                </div>
+              </div>
+            </div>
+            <div class="header-user">
+              <div class="header-user-wrapper">
+                <div class="header-user-label">
+                  Учетная запись:
+                </div>
+                <div class="header-user-info">
+                  <div class="header-user-avatar">
+                    <div class="header-user-avatar-name">
+                      ПВ
+                    </div>
+                  </div>
+                  <div class="header-user-name">
+                    <div class="header-user-name-first">
+                      Приходько
+                    </div>
+                    <div class="header-user-name-last">
+                      Владимир
+                    </div>
+                  </div>
+                </div>
+                <svg class="header-user-trigger">
+                  <use xlink:href="svg/svg/symbols.svg#small-down" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="content-wrapper">
+      <aside class="aside">
+        <div class="sidebar">
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#asterik" />
+                  </svg>
+                  О компании
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      О компании
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Организационная структура
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Ценности
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Бренды
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Меню столовой
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Расписание и маршрут автобусов компании
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Галерея
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#address-book" />
+                  </svg>                  
+                  Сотрудники
+                </a>
+                <ul>
+                  <li class="active">
+                    <a href="#">
+                      Сотрудники
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Отпуска и командировки
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Дни рождения
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Вакансии
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Частые вопросы от сотрудников
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#comments" />
+                  </svg>
+                  Корпоративные инструменты
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Корпоративные боты
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#hand-holding" />
+                  </svg>
+                  Пресс-центр
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Все новости
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Новости CBC Group
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Новости сотрудников
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Жизнь компании
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#histogram" />
+                  </svg>
+                  Опросы
+                </a>                
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#document" />
+                  </svg>
+                  Политика и процедуры
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="service-desk">
+            <button class="ui-btn">
+              <svg class="ui-btn-icon">
+                <use xlink:href="svg/svg/symbols.svg#headset" />
+              </svg>
+              Service desk
+            </button>
+          </div>
+        </div>      
+      </aside>
+      <main class="main">
+        <div class="container">
+          <div class="page-header">
+            <h2 class="page-header-title">
+              Сотрудники
+            </h2>
+            <div class="page-header-control">
+              <ul>
+                <li>
+                  <a href="#">
+                    Отпуска и командировки
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Дни рождения
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Вакансии
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Частые вопросы
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="search">
+            <form class="search-form">
+              <div class="search-wrapper">                
+                <input type="search" placeholder="Введите ФИО, Должность или номер телефона" class="ui-input search-wrapper-input">                
+                <button class="ui-btn">
+                  найти
+                  <svg class="ui-btn-icon">
+                    <use xlink:href="svg/svg/symbols.svg#search" />
+                  </svg>
+                </button>
+              </div>
+              <div class="search-select">
+                <div class="ui-dropdown">
+                  <div class="ui-dropdown-head">
+                    <input disabled type="text" placeholder="Все отделы Carlsberg Uzbekistan" class="ui-dropdown-head-input">
+                    <div class="ui-dropdown-head-mask"></div>
+                    <svg class="ui-dropdown-head-icon">
+                      <use xlink:href="svg/svg/symbols.svg#select" />
+                    </svg>
+                  </div>
+                  <div class="ui-dropdown-content">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          Все отделы Carlsberg Uzbekistan
+                        </a>                        
+                        <ul>
+                          <li>
+                            <a href="#">
+                              Аппарат генерального директора
+                            </a>                           
+                          </li>
+                          <li>
+                            <a href="#">
+                              Дирекция по маркетингу
+                            </a>                            
+                          </li>
+                          <li>
+                            <a href="#">
+                              Дирекция по персоналу и администрации
+                            </a>                            
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  Отдел администрации
+                                </a>                                
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Отдел по персоналу
+                                </a>                                
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Дирекция по производству
+                            </a>                            
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  Лаборатория
+                                </a>                                
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Отдел закупок
+                                </a>                                
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Технический отдел
+                                </a>                                
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Проектная группа
+                                    </a>                                    
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Цех пивопроизводства
+                                </a>
+                                
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Дирекция по производству
+                            </a>                            
+                            <ul>
+                              <li>
+                                <a href="#">
+                                  Лаборатория
+                                </a>                                
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Отдел закупок
+                                </a>                                
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Технический отдел
+                                </a>                                
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Проектная группа
+                                    </a>                                    
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Цех пивопроизводства
+                                </a>                
+                              </li>
+                            </ul>
+                          </li> 
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>   
+            </form>
+            <div class="search-filter">
+              <ul>
+                <li class="active">
+                  <a href="#">
+                    Все
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    А
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Б
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    В
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Г
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Д
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Е
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ж
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    З
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    И
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    К
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Л
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    М
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Н
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    О
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    П
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Р
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    С
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Т
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    У
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ф
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ч
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ц
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ч
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ш
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Щ
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Э
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Ю
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Я
+                  </a>
+                </li>                
+              </ul>              
+            </div>
+          </div>
+          <div class="employees">
+            <div class="row">
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-1.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Kotova Yulia
+                      </div>
+                      <div class="employees-card-name">
+                        Котова Юлия Геннадьевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-2.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Prykhodzka Uladzimir
+                      </div>
+                      <div class="employees-card-name">
+                        Приходько Владимир Александрович
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-3.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Shimova Rita
+                      </div>
+                      <div class="employees-card-name">
+                        Шимова Рита Алексеевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-4.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Kotova Yulia
+                      </div>
+                      <div class="employees-card-name">
+                        Алексеенко Наталья Станиславовна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-5.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Sokil Ekaterina
+                      </div>
+                      <div class="employees-card-name">
+                        Сокил Екатерина Вальпургиевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-6.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Koteikova Ekaterina
+                      </div>
+                      <div class="employees-card-name">
+                        Котейкова Екатерина Васильевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-7.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Drevilo Leonid
+                      </div>
+                      <div class="employees-card-name">
+                        Древило Леонид
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-1.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Kotova Yulia
+                      </div>
+                      <div class="employees-card-name">
+                        Котова Юлия Геннадьевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-2.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Prykhodzka Uladzimir
+                      </div>
+                      <div class="employees-card-name">
+                        Приходько Владимир Александрович
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-3.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Shimova Rita
+                      </div>
+                      <div class="employees-card-name">
+                        Шимова Рита Алексеевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-4.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Kotova Yulia
+                      </div>
+                      <div class="employees-card-name">
+                        Алексеенко Наталья Станиславовна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-5.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Sokil Ekaterina
+                      </div>
+                      <div class="employees-card-name">
+                        Сокил Екатерина Вальпургиевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-6.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Koteikova Ekaterina
+                      </div>
+                      <div class="employees-card-name">
+                        Котейкова Екатерина Васильевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-7.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Drevilo Leonid
+                      </div>
+                      <div class="employees-card-name">
+                        Древило Леонид
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-4.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Kotova Yulia
+                      </div>
+                      <div class="employees-card-name">
+                        Алексеенко Наталья Станиславовна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-5.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Sokil Ekaterina
+                      </div>
+                      <div class="employees-card-name">
+                        Сокил Екатерина Вальпургиевна
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="pagination">           
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-item-link active" href="javascript:void(0)">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-item-next">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#arrow-right" />
+                  </svg> 
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">22</a>
+              </li>                  
+            </ul>
+            <div class="pagination-count">
+              <label for="paginationCount">Показать по</label>
+              <select name="pagination-count" id="paginationCount" class="ui-select ui-select__pagination">
+                <option value="16">8</option>
+                <option value="16">16</option>
+                <option value="24" selected>24</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </main>
+    </main>
+    
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@latest/dist/jquery.formstyler.js"></script>
+
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

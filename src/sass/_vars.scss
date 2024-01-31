@@ -1,0 +1,89 @@
+// Colors & BG's ---
+$bgc: #fff;
+$bg: #FCFCFC;
+$bg_green: #E2F1EE;
+
+$bg_purple: #884C9D;
+$bg_pink: #FE5364;
+
+$font: #303030;
+$font_black: #000;
+$font_dark: #294A41;
+$font_white: #fff;
+$font_white_2: #FAFFFE;
+$font_light: #8D96A7;
+$font_green_light: #88A49C;
+
+$nav_icon: #88A49C;
+
+$button: #294A41;
+
+$error: #FF0000;
+
+$primary: #294A41;
+$primary_red: #A60B15;
+$primary_blue: #005299;
+$primary_dark: #1E3E35;
+$primary_hover: lighten($primary, 10%);
+$primary_active: lighten($primary, 16%);
+
+
+$link: $primary;
+$link_hover: $primary_hover;
+$link_active: $primary_active;
+$link_border: $primary_hover;
+$link_border_hover: transparent;
+
+$border: #88A49C;
+$border_menu: #3A574F;
+$border_light: #D2D2D2;
+$border_lightest: #E7EFFB;
+
+$bg_input: #EEF2F5;
+$placeholder: #A8B0BE;
+$select: #4F796E;
+
+
+// Layouts
+$inner: 1720px;
+$gutter: 40px;
+$col_gutter: 10px;
+$block_margin: 0 0 25px;
+
+
+// Grid
+$breakpoints: ("xl":1440,"lg":1260,"md":1024, "nm":992,"sm":768,"xs":599,"us":360);
+
+
+// Typography ---
+$fontsize: 16;
+$weight: 400;
+$basefont: 'Nunito';
+$lh: 1.4;
+$paragraph_margin: 0px 0px 20px;
+
+// headings
+$headings_font_family: $basefont;
+$headings_margin: 40px 0px 40px;
+$headings_font_weight: 500;
+$headings_text_transform: none;
+$h1: 62;
+$h2: 48;
+$h3: 40;
+$h4: 30;
+$h5: 24;
+$h6: $fontsize;
+
+$block_heading_font_size: 24;
+$block_heading_font_weight: 700;
+
+
+@mixin fz($f_size) {
+	font-size: $f_size + px;
+	font-size: $f_size/16 + rem;
+}
+
+@mixin ls($lsp) {
+	letter-spacing: $lsp + px;
+	letter-spacing: $lsp/16 + rem;
+}

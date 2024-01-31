@@ -1,0 +1,53 @@
+<div class="mfp-popup popup-gallery">
+    <div class="mfp-popup-inner popup-gallery-inner">
+      <div class="swiper gallery-slider">         
+        <div class="swiper-wrapper">        
+        </div>      
+      </div>
+      <div class="popup-gallery-slider-nav popup-gallery-slider-next">
+
+      </div>
+      <div class="popup-gallery-slider-nav popup-gallery-slider-prev">
+
+      </div>
+    </div>
+      
+    <script>
+      var popupData = $.magnificPopup.instance.currItem.data;      
+  
+      var links = popupData.links; 
+      var index = popupData.index;
+  
+      var slidesHTML = '';
+      
+  
+      links.each(function() {
+        let img = $(this).find('img');  
+        let src = img.attr('src');
+        let alt = img.attr('alt');
+  
+        slidesHTML += `
+          <div class="swiper-slide">
+            <div class="popup-gallery-card"> 
+              <img src="${src}" alt="${alt}">           
+            </div>
+          </div>
+        `;
+      });
+  
+      $('.swiper-wrapper').html(slidesHTML);
+  
+  
+      var gallerySlider = new Swiper('.gallery-slider', {       
+        loop: true,    
+        slidesPerView: 'auto',
+        initialSlide: index,
+        grabCursor: true,  
+        navigation: {
+          nextEl: '.popup-gallery-slider-next',
+          prevEl: '.popup-gallery-slider-prev',
+        },
+      });
+      
+    </script>
+  </div>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=1024"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlsberg</title>
+  <meta name="keywords" content="Carlsberg" />
+  <meta name="description" content="Carlsberg" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-form-styler@latest/dist/jquery.formstyler.css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-logo">
+        <a href="#">
+          <img src="./images/logo.png" alt="logo" class="header-logo-image">
+        </a>
+      </div>
+      <div class="header-content">
+        <div class="container">
+          <div class="header-content-wrapper">
+            <div class="header-info">
+              <div class="header-info-item">
+                <div class="header-info-item-title color-dark">
+                  Cегодня:
+                </div>
+                <div class="header-info-item-text">
+                  20 июля 2021, вторник
+                </div>
+              </div>
+              <div class="header-info-item header-info-item__weather">
+                <svg class="header-info-icon">
+                  <use xlink:href="svg/svg/symbols.svg#sun" />
+                </svg>
+                <div class="header-info-item-text">
+                  +22°
+                </div>
+                <div class="header-info-item-text">
+                  Ясно
+                </div>
+              </div>              
+            </div>
+            <div class="header-currency">
+              <div class="header-currency-item">
+                <img src="./images/bank.png" alt="bank" loading="lazy" class="header-currency-icon">  
+                <div class="header-currency-item-text">
+                  МРЭП
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  12921,67
+                </div>
+              </div>
+              <div class="header-currency-item">
+                <img src="./images/usd.png" alt="usd" loading="lazy" class="header-currency-icon">              
+                <div class="header-currency-item-text">
+                  USD
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  12921,67
+                </div>
+              </div>
+              <div class="header-currency-item">
+                <img src="./images/eur.png" alt="eur" loading="lazy" class="header-currency-icon"> 
+                <div class="header-currency-item-text">
+                  EUR
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  12921,67
+                </div>
+              </div>
+              <div class="header-currency-item">                
+                <img src="./images/rub.png" alt="rub" loading="lazy" class="header-currency-icon">           
+                <div class="header-currency-item-text">
+                  RUB
+                </div> 
+                <div class="header-currency-item-text font-semi">
+                  126,67
+                </div>
+              </div>
+            </div>
+            <div class="header-user">
+              <div class="header-user-wrapper">
+                <div class="header-user-label">
+                  Учетная запись:
+                </div>
+                <div class="header-user-info">
+                  <div class="header-user-avatar">
+                    <div class="header-user-avatar-name">
+                      ПВ
+                    </div>
+                  </div>
+                  <div class="header-user-name">
+                    <div class="header-user-name-first">
+                      Приходько
+                    </div>
+                    <div class="header-user-name-last">
+                      Владимир
+                    </div>
+                  </div>
+                </div>
+                <svg class="header-user-trigger">
+                  <use xlink:href="svg/svg/symbols.svg#small-down" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="content-wrapper">
+      <aside class="aside">
+        <div class="sidebar">
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#asterik" />
+                  </svg>
+                  О компании
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      О компании
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Организационная структура
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Ценности
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Бренды
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Меню столовой
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Расписание и маршрут автобусов компании
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Галерея
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="active">
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#address-book" />
+                  </svg>                  
+                  Сотрудники
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Сотрудники
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Отпуска и командировки
+                    </a>
+                  </li>
+                  <li class="active">
+                    <a href="#">
+                      Дни рождения
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Вакансии
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Частые вопросы от сотрудников
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#comments" />
+                  </svg>
+                  Корпоративные инструменты
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Корпоративные боты
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#hand-holding" />
+                  </svg>
+                  Пресс-центр
+                </a>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Все новости
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Новости CBC Group
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Новости сотрудников
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Жизнь компании
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#histogram" />
+                  </svg>
+                  Опросы
+                </a>                
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#document" />
+                  </svg>
+                  Политика и процедуры
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="service-desk">
+            <button class="ui-btn">
+              <svg class="ui-btn-icon">
+                <use xlink:href="svg/svg/symbols.svg#headset" />
+              </svg>
+              Service desk
+            </button>
+          </div>
+        </div>      
+      </aside>
+      <main class="main">
+        <div class="container">
+          <div class="page-header">
+            <h2 class="page-header-title">
+              Дни рождения <span class="color-green-light ">(31 декабря)</span>
+            </h2>
+            <div class="page-header-control">
+              <ul>
+                <li class="active">
+                  <a href="#">
+                    Сегодня
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Текущий месяц
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Прошлый месяц
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Следующий месяц
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="birthdays">
+            <div class="row">
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-1.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                      <img src="./images/birth-icon-1.svg" alt="birthday" loading="lazy" class="employees-card-avatar-icon">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Kotova Yulia
+                      </div>
+                      <div class="employees-card-name">
+                        Котова Юлия Геннадьевна
+                      </div>
+                      <div class="employees-card-birthday bg-purple">
+                        29 ноября
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="employees-card">
+                  <div class="employees-card-header">
+                    <div class="employees-card-avatar">
+                      <img src="./images/examples/avatar-2.jpg" alt="avatar" loading="lazy" class="employees-card-avatar-photo">
+                      <img src="./images/birth-icon-2.svg" alt="birthday" loading="lazy" class="employees-card-avatar-icon">
+                    </div>
+                    <div class="employees-card-title">
+                      <div class="employees-card-nick">
+                        Prykhodzka Uladzimir
+                      </div>
+                      <div class="employees-card-name">
+                        Приходько Владимир Александрович
+                      </div>
+                      <div class="employees-card-birthday bg-pink">
+                        29 ноября
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="employees-card-body">
+                    <div class="employees-card-department">
+                      Аппарат генерального директора
+                    </div>
+                    <div class="employees-card-position">
+                      SMM Дизайнер
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:031">031</a><span> (внутренний)</span>
+                    </div>
+                    <div class="employees-card-phone">
+                      <a href="tel:+998909194312">+998 90 919 43 12</a><span> (мобильный)</span>
+                    </div>
+                    <a href="mailto:kotova_yulia@carlsberg.uz" class="employees-card-email">
+                      kotova_yulia@carlsberg.uz
+                    </a>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+
+          <h2 class="section-title">
+            Последние новости
+          </h2>
+          <div class="news news__last">           
+            <div class="row">
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="news-card">
+                  <div class="news-card-title">
+                    Уполномоченное лицо на подписание документов в три строки заголовок
+                  </div>
+                  <div class="news-card-info">
+                    <div class="news-card-date">
+                      28.10.2023
+                    </div>
+                    <div class="news-card-qualification">
+                      Новости компании
+                    </div>
+                  </div>
+                  <div class="news-card-text">
+                    Юридический отдел информирует Вас о том, что на период отсутствия Генерального директора,
+                    Надава Геллера с 29.06.2017 по10.07.2017 включительно Финансовый Директор Шалва текст
+                  </div>
+                  <a href="#" class="news-card-more">
+                    Подробнее
+                    <svg class="news-card-more-icon">
+                      <use xlink:href="svg/svg/symbols.svg#right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="news-card">
+                  <div class="news-card-title">
+                    С праздником Навруз!
+                  </div>
+                  <div class="news-card-info">
+                    <div class="news-card-date">
+                      28.10.2023
+                    </div>
+                    <div class="news-card-qualification">
+                      CBC Group
+                    </div>                    
+                  </div>
+                  <div class="news-card-text">
+                    С особенным чувством тепла и радости хотел бы сердечнопоздравить вас с национальным праздником Навруз!
+                    Как частьсемьи CBC Group, желаю всем вам счастливого праздника и надеюсь
+                  </div>
+                  <a href="#" class="news-card-more">
+                    Подробнее
+                    <svg class="news-card-more-icon">
+                      <use xlink:href="svg/svg/symbols.svg#right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="news-card">
+                  <div class="news-card-title">
+                    Уполномоченное лицо на подписание документов
+                  </div>
+                  <div class="news-card-info">
+                    <div class="news-card-date">
+                      28.10.2023
+                    </div>
+                    <div class="news-card-qualification">
+                      Новости компании
+                    </div>
+                  </div>
+                  <div class="news-card-text">
+                    Юридический отдел информирует Вас о том, что на период отсутствия Генерального директора,
+                    Надава Геллера с 29.06.2017 по10.07.2017 включительно Финансовый Директор Шалва текст
+                  </div>
+                  <a href="#" class="news-card-more">
+                    Подробнее
+                    <svg class="news-card-more-icon">
+                      <use xlink:href="svg/svg/symbols.svg#right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-6">
+                <div class="news-card">
+                  <div class="news-card-title">
+                    Уполномоченное лицо на подписание документов и еще две сроки текста чтобы показать очень длинный заголовок
+                  </div>
+                  <div class="news-card-info">
+                    <div class="news-card-date">
+                      28.10.2023
+                    </div>
+                    <div class="news-card-qualification">
+                      Новости компании
+                    </div>
+                  </div>
+                  <div class="news-card-text">
+                    Юридический отдел информирует Вас о том, что на период отсутствия Генерального директора,
+                    Надава Геллера с 29.06.2017 по10.07.2017 включительно Финансовый Директор Шалва текст
+                  </div>
+                  <a href="#" class="news-card-more">
+                    Подробнее
+                    <svg class="news-card-more-icon">
+                      <use xlink:href="svg/svg/symbols.svg#right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>     
+            </div>
+          </div>
+          
+          
+        </div>
+      </main>
+    </main>
+    
+  </div>  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@latest/dist/jquery.formstyler.js"></script>
+
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
