@@ -195,6 +195,36 @@ document.addEventListener('DOMContentLoaded', () => {
     return false;
   });
 
+  // Открытие попапа
+  $(document).on("click", ".mfp-link", function () {
+    var a = $(this);
+    $.magnificPopup.open({
+      items: { src: a.attr("data-href") },
+      type: "ajax",
+      overflowY: "scroll",
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in',
+      ajax: {
+        tError: "Error. Not valid url",
+      },
+      callbacks: {
+        open: function () {
+          setTimeout(function(){
+            $('.mfp-wrap').addClass('not_delay');
+            $('.mfp-popup').addClass('not_delay');
+          },700);
+  
+          document.documentElement.style.overflow = 'hidden'
+        },
+  
+        close: function() {
+          document.documentElement.style.overflow = ''
+        }
+      }
+    });
+    return false;
+  });
+
   // разветвляющийся выпадающий список
   (function() {
     document.querySelectorAll('.ui-dropdown-head').forEach(head => {

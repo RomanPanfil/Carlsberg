@@ -19,6 +19,16 @@
         flex: 0 0 280px;
         padding-right: 20px;
         border: 1px solid $border_menu;
+
+        @media (max-width: 1680px) {
+            width: 260px;
+            flex: 0 0 260px;
+        }
+
+        @media (max-width: 1366px) {
+            width: 230px;
+            flex: 0 0 230px;
+          }
         
         // &::after {
         //     content: '';
@@ -33,6 +43,11 @@
         &-image {
             max-width: 180px;
             max-height: 54px;
+
+            @media (max-width: 1680px) {
+                max-width: 160px;
+                max-height: 48px;
+            }
         }
     }
 
@@ -48,9 +63,13 @@
 
         &-wrapper {
             width: 100%;
-            display: flex;
-            
+            display: flex;            
             align-items: center;
+
+            @media (max-width: 1366px) {
+                flex-wrap: wrap;
+                row-gap: 20px;
+            }
         }
     }
 
@@ -59,9 +78,16 @@
         @include fz(14);
         margin-right: 22px;
 
+        @media (max-width: 1366px) {
+            flex-grow: 1;
+            @include fz(13);
+            margin-right: 20px;
+        }
+
         &-item {
             position: relative;
             padding-right: 18px;
+            white-space: nowrap;
 
             &:not(:first-child) {
                 padding-left: 18px;
@@ -105,17 +131,31 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 8px;
+
+            @media (max-width: 1366px) {
+                width: 18px;
+                height: 18px;
+                margin-right: 6px;
+            }
         }
     }    
 
     &-currency {
         display: flex;
+        column-gap: 12px;
         flex-grow: 1;
         @include fz(14);
         margin-right: 22px;
 
+        @media (max-width: 1366px) {
+            order: 1;
+            justify-content: center;
+            margin-right: 136px;
+        }
+
         &-item {
             padding-right: 8px;
+            white-space: nowrap;
 
             &:not(:first-child) {
                 padding-left: 18px;
@@ -140,7 +180,12 @@
             display: inline-block;
             vertical-align: middle;
             // margin-right: 6px;
-            border-radius: 50%;         
+            border-radius: 50%;
+            
+            @media (max-width: 1366px) {
+                width: 22px;
+                height: 22px;
+            }
         }
     }
 
@@ -160,8 +205,7 @@
         &-wrapper {
             padding: 6px;
             display: flex;
-            flex-direction: column;
-           
+            flex-direction: column;           
             align-items: flex-start;
             // gap: 8px;          
             position: absolute;
@@ -171,6 +215,11 @@
             border-radius: 30px;
             box-shadow: 0px 4px 35px 0px rgba(114, 142, 174, 0.20);
             transition: border-radius 0.3s;
+
+            @media (max-width: 1366px) {
+                padding: 4px;
+                top: -3px;
+            }
 
             // &::before {
             //     content: '';
@@ -189,7 +238,11 @@
             height: 0;
             overflow: hidden;
             opacity: 0;
-            visibility: hidden;     
+            visibility: hidden;
+
+            @media (max-width: 1366px) {
+                @include fz(15);
+            }
         }
 
         &-label {
@@ -199,7 +252,11 @@
             opacity: 0;
             visibility: hidden;
             color: $font_light;
-            @include fz(14);                     
+            @include fz(14);
+            
+            @media (max-width: 1366px) {
+                @include fz(13);
+            }
         }
 
         &-info {
@@ -216,6 +273,13 @@
             width: 1px;
             height: 32px;
             background-color: $border_lightest;
+
+            @media (max-width: 1366px) {
+                top: 0;
+                right: 100px;
+                transform: translateY(0%);
+                height: 38px;
+            }
         }
         
         &-avatar {
@@ -227,6 +291,13 @@
             border-radius: 50%;
             background-color: $bg_green;
             margin-right: 38px;
+
+            @media (max-width: 1366px) {
+                @include fz(13);
+                width: 36px;
+                height: 36px;
+                margin-right: 36px;
+            }
 
             &-name {
                 position: absolute;
@@ -242,7 +313,12 @@
             position: absolute;
             right: 12px;
             top: 12px;
-            transition: transform 0.3s;      
+            transition: transform 0.3s;
+
+            @media (max-width: 1366px) {
+                width: 22px;
+                height: 22px;
+            }
         }
         
         &.opened {
@@ -259,7 +335,11 @@
                 overflow: visible;
                 opacity: 1;
                 visibility: visible;
-                margin-bottom: 6px; 
+                margin-bottom: 6px;
+
+                @media (max-width: 1366px) {
+                    margin-bottom: 4px;
+                }
             }
 
             .header-user-name {
