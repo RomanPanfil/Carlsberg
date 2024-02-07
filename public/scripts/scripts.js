@@ -279,6 +279,51 @@ document.addEventListener('DOMContentLoaded', () => {
     
   })();
 
+  // слайдер новостей
+  (function() {
+    if (!document.querySelector('.news-slider')) return
+  
+    var swiper = new Swiper('.news-slider', {   
+      grabCursor: true,    
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 20,
+      // autoHeight: true,
+      autoplay: true,
+      loop: true,
+      navigation: {
+        nextEl: ".news-slider-next",
+        prevEl: ".news-slider-prev",
+      },
+      breakpoints: {
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          autoplay: false,
+          loop: false,        
+        },  
+        1025: {
+          slidesPerView: 3,
+          spaceBetween: 12,
+          autoplay: false,
+          loop: false,
+        },
+        1141: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          autoplay: false,
+          loop: false,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 20,       
+          autoplay: false,
+          loop: false,         
+        }
+      }
+    });  
+  })();
+
   
 
 })
