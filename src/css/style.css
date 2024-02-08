@@ -6644,6 +6644,17 @@ table {
   border-radius: 8px;
   padding: 40px;
 }
+@media (max-width: 1366px) {
+  .popup-appeal {
+    padding: 32px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-appeal {
+    padding: 26px;
+    border-radius: 6px;
+  }
+}
 .popup-appeal-image {
   position: absolute;
   top: 0;
@@ -6654,6 +6665,18 @@ table {
   width: 80px;
   height: 80px;
 }
+@media (max-width: 1366px) {
+  .popup-appeal-image {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-appeal-image {
+    width: 60px;
+    height: 60px;
+  }
+}
 .popup-appeal-title {
   font-size: 20px;
   font-size: 1.25rem;
@@ -6661,12 +6684,54 @@ table {
   font-weight: 500;
   margin-bottom: 20px;
 }
+@media (max-width: 1366px) {
+  .popup-appeal-title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-appeal-title {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    margin-bottom: 16px;
+  }
+}
 .popup-appeal-description {
   line-height: 1.3;
   margin-bottom: 20px;
 }
+@media (max-width: 1366px) {
+  .popup-appeal-description {
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-appeal-description {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    margin-bottom: 14px;
+  }
+}
 .popup-appeal-text {
   margin-bottom: 20px;
+}
+@media (max-width: 1366px) {
+  .popup-appeal-text {
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-appeal-text {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    margin-bottom: 16px;
+  }
 }
 .popup-appeal-submit {
   font-size: 14px;
@@ -6675,6 +6740,18 @@ table {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
+}
+@media (max-width: 1366px) {
+  .popup-appeal-submit {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-appeal-submit {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    margin-top: 26px;
+  }
 }
 .popup-appeal .mfp-close {
   position: absolute;
@@ -6690,6 +6767,18 @@ table {
           transform: translateX(100%);
   opacity: 1;
 }
+@media (max-width: 1366px) {
+  .popup-appeal .mfp-close {
+    background-size: 28px 28px;
+    top: -6px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-appeal .mfp-close {
+    background-size: 24px 24px;
+    top: -8px;
+  }
+}
 .popup-appeal .mfp-close:hover {
   opacity: 0.7;
 }
@@ -6701,6 +6790,18 @@ table {
   border-radius: 8px;
   padding: 60px;
 }
+@media (max-width: 1366px) {
+  .popup-success {
+    max-width: min(460px, 50vw);
+    padding: 52px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-success {
+    max-width: min(400px, 50vw);
+    padding: 46px;
+  }
+}
 .popup-success-title {
   position: relative;
   font-size: 20px;
@@ -6709,6 +6810,20 @@ table {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 32px;
+}
+@media (max-width: 1366px) {
+  .popup-success-title {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-success-title {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    margin-bottom: 18px;
+  }
 }
 .popup-success-title::after {
   content: "";
@@ -6726,6 +6841,18 @@ table {
   text-align: center;
   line-height: 1.3;
 }
+@media (max-width: 1366px) {
+  .popup-success-message {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-success-message {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
 .popup-success .mfp-close {
   position: absolute;
   font-size: 0;
@@ -6739,6 +6866,20 @@ table {
       -ms-transform: translateX(100%);
           transform: translateX(100%);
   opacity: 1;
+}
+@media (max-width: 1366px) {
+  .popup-success .mfp-close {
+    background-size: 28px 28px;
+    top: -6px;
+    right: -10px;
+  }
+}
+@media (max-width: 1140px) {
+  .popup-success .mfp-close {
+    background-size: 24px 24px;
+    top: -8px;
+    right: -6px;
+  }
 }
 .popup-success .mfp-close:hover {
   opacity: 0.7;
