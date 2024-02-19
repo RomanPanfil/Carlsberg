@@ -6291,7 +6291,7 @@ table {
     margin-bottom: 26px;
   }
 }
-.tools-card-description-item {
+.tools-card-description p {
   margin-bottom: 20px;
 }
 .tools-card .ui-btn {
