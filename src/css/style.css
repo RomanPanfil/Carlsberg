@@ -1070,11 +1070,9 @@ table {
   text-align: center;
   cursor: pointer;
   outline: none;
-  -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
-  transition: background-color 0.2s, -webkit-transform 0.2s;
-  -o-transition: background-color 0.2s, transform 0.2s;
-  transition: background-color 0.2s, transform 0.2s;
-  transition: background-color 0.2s, transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition: background-color 0.2s, opacity 0.2s;
+  -o-transition: background-color 0.2s, opacity 0.2s;
+  transition: background-color 0.2s, opacity 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1202,9 +1200,7 @@ table {
   }
 }
 .ui-btn:hover {
-  -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
-          transform: translateY(-1px);
+  opacity: 0.8;
 }
 .ui-btn-bg-red {
   background-color: #A60B15;
@@ -1849,7 +1845,7 @@ table {
   background-color: #294A41;
   color: #fff;
 }
-.pagination-item-next {
+.pagination-item-nav {
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -1863,32 +1859,37 @@ table {
           justify-content: center;
 }
 @media (max-width: 1366px) {
-  .pagination-item-next {
+  .pagination-item-nav {
     width: 42px;
     height: 42px;
   }
 }
 @media (max-width: 1140px) {
-  .pagination-item-next {
+  .pagination-item-nav {
     width: 38px;
     height: 38px;
   }
 }
-.pagination-item-next .icon {
+.pagination-item-nav .icon {
   width: 24px;
   height: 24px;
 }
 @media (max-width: 1366px) {
-  .pagination-item-next .icon {
+  .pagination-item-nav .icon {
     width: 20px;
     height: 20px;
   }
 }
 @media (max-width: 1140px) {
-  .pagination-item-next .icon {
+  .pagination-item-nav .icon {
     width: 18px;
     height: 18px;
   }
+}
+.pagination-item-nav__prev {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .pagination-count {
   color: #1D1D1D;
@@ -4040,6 +4041,7 @@ table {
 }
 .nav > ul > li.active .icon {
   fill: #fff;
+  opacity: 1;
 }
 .nav > ul > li.active ul {
   height: inherit;
@@ -4096,6 +4098,7 @@ table {
   fill: #88A49C;
   width: 20px;
   height: 20px;
+  opacity: 0.5;
 }
 @media (max-width: 1366px) {
   .nav > ul > li .icon {

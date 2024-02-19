@@ -134,6 +134,7 @@
 
         .icon {
           fill: $font_white;
+          opacity: 1;
         }
 
         ul {
@@ -183,6 +184,7 @@
         fill: $nav_icon;
         width: 20px;
         height: 20px;
+        opacity: 0.5;
         
         @media (max-width: 1366px) {
           width: 18px;
