@@ -398,13 +398,7 @@ table {
 		opacity: 0;
 		visibility: hidden; 
 		transition: height 0.3s, transform 0.3s;
-		transform: scale(0.2);
-
-		p {
-			&:last-of-type {
-				margin-bottom: 0;
-			}
-		}
+		transform: scale(0.2);		
 
 		&-items {
 			border-bottom: 1px solid $bg_green;
@@ -525,13 +519,13 @@ table {
 					padding: 12px;				
 				}
 
-				&__simple {
-					padding-bottom: 36px;
+				// &__simple {
+				// 	padding-bottom: 36px;
 
-					@media (max-width: 1366px) {
-						padding-bottom: 32px;			
-					}
-				}
+				// 	@media (max-width: 1366px) {
+				// 		padding-bottom: 32px;			
+				// 	}
+				// }
 			}
 
 			.accordion-icon {

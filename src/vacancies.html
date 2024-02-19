@@ -318,8 +318,13 @@
                         <use xlink:href="svg/svg/symbols.svg#small-down" />
                       </svg>
                     </div>
-                    <div class="accordion-content accordion-content__simple">
-                      Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                    <div class="accordion-content accordion-content__simple">                      
+                      <p>
+                        Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                      </p>
+                      <p>
+                        Начальник цеха упаковки и транспортировки
+                      </p>
                     </div>
                   </div>
                   <div class="accordion-item opened">
@@ -750,20 +755,16 @@
                             Обязанности:
                           </div>
                           <div class="col-xl-5 col-lg-7 col-md-9">
-                            <ul>
-                              <li>
-                                Разработка КД на новые изделия (нестандартное оборудование);
-                              </li>
-                              <li>
-                                Расчёт на прочность и ресурс;
-                              </li>
-                              <li>
-                                Модернизация имеющихся моделей изделий;
-                              </li>
-                              <li>
-                                Конструкторское сопровождение производства на всех его этапах.
-                              </li>
-                            </ul>
+                            <p>
+                              Разработка КД на новые изделия (нестандартное оборудование);
+                            </p>
+                            <p>
+                              Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                            </p>
+                            <p>
+                              Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                              Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                            </p>
                           </div>
                         </div>
                         <div class="accordion-content-item row">
@@ -1130,8 +1131,15 @@
                 <div class="pagination">           
                   <ul class="pagination-list">
                     <li class="pagination-item">
-                      <a class="pagination-item-link active" href="javascript:void(0)">1</a>
+                      <a href="#" class="pagination-item-nav pagination-item-nav__prev">
+                        <svg class="icon">
+                          <use xlink:href="svg/svg/symbols.svg#arrow-right" />
+                        </svg> 
+                      </a>
                     </li>
+                    <li class="pagination-item">
+                      <a class="pagination-item-link active" href="javascript:void(0)">1</a>
+                    </li>              
                     <li class="pagination-item">
                       <a class="pagination-item-link" href="javascript:void(0)">2</a>
                     </li>
@@ -1142,7 +1150,7 @@
                       <a class="pagination-item-link" href="javascript:void(0)">4</a>
                     </li>
                     <li class="pagination-item">
-                      <a href="#" class="pagination-item-next">
+                      <a href="#" class="pagination-item-nav pagination-item-nav__next">
                         <svg class="icon">
                           <use xlink:href="svg/svg/symbols.svg#arrow-right" />
                         </svg> 
@@ -1184,12 +1192,12 @@
                     </select>
                   </div>
                   <div class="ui-field">
-                    <textarea class="ui-textarea ui-textarea__side" placeholder="Ваше сообщение"></textarea>
+                    <textarea class="ui-textarea ui-textarea__side" placeholder="Ваше сообщение" id="message" name="message"></textarea>
                   </div>
                   <div class="ui-send">
                     <label class="ui-send-label">                    
                       <span class="ui-send-trigger">Прикрепить CV</span>                        
-                      <input type="file" id="file" accept=".pdf, .doc, .docx" class="ui-input-file">
+                      <input type="file" accept=".pdf, .doc, .docx" class="ui-input-file" id="file" name="file">
                     </label>
                     <span class="ui-send-formats">(.pdf, .docx, .doc)</span>
                   </div>                    
@@ -1197,6 +1205,30 @@
                     Отправить резюме
                   </button>
                 </form>
+
+                <script>
+                  $(document).ready(function () {
+                    $.validator.messages.required = 'Пожалуйста, заполните это поле';
+            
+                    $(".form__side").validate({
+                      submitHandler: function(form, event) {
+                        if ($('#file')[0].files.length === 0) {
+                          event.preventDefault();                    
+                          $('#file').valid();                        
+                          return false; 
+                        }
+                
+                        event.preventDefault();
+                        form.reset();
+                      },
+                      rules: { 
+                        category: { required: true },
+                        message: { required: true },
+                        file: { required: true }
+                      },
+                    });
+                  });
+                </script>
               </div>
             </div>
           </div>
