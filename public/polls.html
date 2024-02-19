@@ -438,12 +438,29 @@
                     </select>
                   </div>
                   <div class="ui-field">
-                    <textarea class="ui-textarea ui-textarea__side" placeholder="Введите ваш вопрос"></textarea>
+                    <textarea class="ui-textarea ui-textarea__side" placeholder="Введите ваш вопрос" id="question" name="question"></textarea>
                   </div>
                   <button class="ui-btn ui-btn-block text-uppercase">
                     отправить вопрос
                   </button>
                 </form>
+
+                <script>
+                  $(document).ready(function () {        
+                    $.validator.messages.required = 'Пожалуйста, заполните это поле';
+            
+                    $(".form__side").validate({
+                      submitHandler: function(form, event) {
+                        event.preventDefault();
+                        form.reset();
+                      },
+                      rules: {
+                        question: { required: true },
+                      },
+                    });
+                  });
+                </script>
+
               </div>
             </div>
           </div>

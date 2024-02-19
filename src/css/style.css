@@ -891,6 +891,9 @@ table {
       -ms-transform: scale(0.2);
           transform: scale(0.2);
 }
+.accordion-content p:last-of-type {
+  margin-bottom: 0;
+}
 .accordion-content-items {
   border-bottom: 1px solid #E2F1EE;
   margin-bottom: 20px;
@@ -1200,7 +1203,7 @@ table {
   }
 }
 .ui-btn:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .ui-btn-bg-red {
   background-color: #A60B15;

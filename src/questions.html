@@ -328,12 +328,24 @@
                     </div>
                     <div class="accordion-content accordion-content__simple">
                       Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                      <p>
+                        Немного текста для примера
+                      </p>
+                      <p>
+                        Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                      </p>
+                      <p>
+                        Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                        Немного текста для примера развернутого ответа на любой вопрос, который мог бы быть размещен в данном разделе администрацией.
+                      </p>
                     </div>
                   </div>
                   <div class="accordion-item opened">
                     <div class="accordion-trigger">
                       <div class="accordion-trigger-text">
-                        Куда можно обратиться для передачи пожеланий по улучшению рабочего процесса?
+                        <p>
+                          Куда можно обратиться для передачи пожеланий по улучшению рабочего процесса?
+                        </p>                        
                       </div>
                       <svg class="accordion-icon">
                         <use xlink:href="svg/svg/symbols.svg#small-down" />
@@ -445,8 +457,15 @@
                 <div class="pagination">           
                   <ul class="pagination-list">
                     <li class="pagination-item">
-                      <a class="pagination-item-link active" href="javascript:void(0)">1</a>
+                      <a href="#" class="pagination-item-nav pagination-item-nav__prev">
+                        <svg class="icon">
+                          <use xlink:href="svg/svg/symbols.svg#arrow-right" />
+                        </svg> 
+                      </a>
                     </li>
+                    <li class="pagination-item">
+                      <a class="pagination-item-link active" href="javascript:void(0)">1</a>
+                    </li>              
                     <li class="pagination-item">
                       <a class="pagination-item-link" href="javascript:void(0)">2</a>
                     </li>
@@ -457,7 +476,7 @@
                       <a class="pagination-item-link" href="javascript:void(0)">4</a>
                     </li>
                     <li class="pagination-item">
-                      <a href="#" class="pagination-item-next">
+                      <a href="#" class="pagination-item-nav pagination-item-nav__next">
                         <svg class="icon">
                           <use xlink:href="svg/svg/symbols.svg#arrow-right" />
                         </svg> 
@@ -499,12 +518,29 @@
                     </select>
                   </div>
                   <div class="ui-field">
-                    <textarea class="ui-textarea ui-textarea__side" placeholder="Введите ваш вопрос"></textarea>
+                    <textarea class="ui-textarea ui-textarea__side" placeholder="Введите ваш вопрос" id="question" name="question"></textarea>
                   </div>
                   <button class="ui-btn ui-btn-block text-uppercase">
                     отправить вопрос
                   </button>
                 </form>
+
+                <script>
+                  $(document).ready(function () {        
+                    $.validator.messages.required = 'Пожалуйста, заполните это поле';
+            
+                    $(".form__side").validate({
+                      submitHandler: function(form, event) {
+                        event.preventDefault();
+                        form.reset();
+                      },
+                      rules: {
+                        question: { required: true },
+                      },
+                    });
+                  });
+                </script>
+
               </div>
             </div>
           </div>
