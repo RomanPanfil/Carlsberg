@@ -5169,6 +5169,25 @@ table {
   position: relative;
 }
 
+.article a {
+  color: #005299;
+}
+.article ul {
+  list-style: disc;
+  margin-bottom: 22px;
+}
+.article ul li {
+  list-style: disc;
+  list-style-position: inside;
+}
+.article ol {
+  list-style: decimal;
+  margin-bottom: 22px;
+}
+.article ol li {
+  list-style: decimal;
+  list-style-position: inside;
+}
 .article__main {
   border-bottom: 1px solid #E2F1EE;
   margin-bottom: 50px;

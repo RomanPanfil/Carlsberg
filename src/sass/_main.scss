@@ -1146,6 +1146,30 @@
 }
 
 .article {
+
+  a {
+    color: $primary_blue;
+  }
+
+  ul {
+    list-style: disc;
+    margin-bottom: 22px;
+
+    li {
+      list-style: disc;
+      list-style-position: inside;
+    }    
+  }
+
+  ol {
+    list-style: decimal;
+    margin-bottom: 22px;
+
+    li {
+      list-style: decimal;
+      list-style-position: inside;
+    }
+  }
   &__main {
     border-bottom: 1px solid $bg_green;
     margin-bottom: 50px;
