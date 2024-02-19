@@ -128,7 +128,7 @@
         </div>
       </div>
     </header>
-    <main class="content-wrapper">
+    <div class="content-wrapper">
       <aside class="aside">
         <div class="sidebar">
           <nav class="nav">
@@ -547,9 +547,50 @@
               </div>
             </div>
           </div>
+          <div class="pagination">           
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a href="#" class="pagination-item-nav pagination-item-nav__prev">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#arrow-right" />
+                  </svg> 
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link active" href="javascript:void(0)">1</a>
+              </li>              
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-item-nav pagination-item-nav__next">
+                  <svg class="icon">
+                    <use xlink:href="svg/svg/symbols.svg#arrow-right" />
+                  </svg> 
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-item-link" href="javascript:void(0)">22</a>
+              </li>                  
+            </ul>
+            <div class="pagination-count">
+              <label for="paginationCount">Показать по</label>
+              <select name="pagination-count" id="paginationCount" class="ui-select ui-select__pagination">
+                <option value="16">8</option>
+                <option value="16">16</option>
+                <option value="24" selected>24</option>
+              </select>
+            </div>
+          </div>
         </div>
       </main>
-    </main>    
+    </div>    
   </div>  
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
