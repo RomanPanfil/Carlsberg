@@ -1148,7 +1148,7 @@
 .article {
 
   a {
-    color: $primary_blue;
+    color: $font_green_light;
   }
 
   ul {
@@ -1185,7 +1185,7 @@
     li {
       line-height: 1.2;
       position: relative;
-      padding-left: 22px;
+      padding-left: 24px;
  
       &:not(:last-of-type) {
         margin-bottom: 16px;

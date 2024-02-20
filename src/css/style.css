@@ -5162,7 +5162,7 @@ table {
 }
 
 .article a {
-  color: #005299;
+  color: #88A49C;
 }
 .article ul {
   margin-top: 32px;
@@ -5193,7 +5193,7 @@ table {
 .article ol li {
   line-height: 1.2;
   position: relative;
-  padding-left: 22px;
+  padding-left: 24px;
 }
 .article ol li:not(:last-of-type) {
   margin-bottom: 16px;
