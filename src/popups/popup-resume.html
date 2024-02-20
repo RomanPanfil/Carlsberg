@@ -1,0 +1,64 @@
+<div class="mfp-popup popup-resume">
+    <div class="mfp-popup-inner popup-resume-inner">
+        <form class="form form__side">
+            <div class="form-image">
+                <img src="./images/resume.svg" alt="resume" loading="lazy">
+            </div>                
+            <div class="form-title">
+                прислать резюме
+            </div>
+            <div class="ui-field">
+                <select name="category" id="category" class="ui-select ui-select__side">
+                    <option value="1" disabled selected>
+                        Выберите вакансию
+                    </option>
+                    <option value="2">
+                        директор
+                    </option>
+                    <option value="2">
+                        заместитель директора
+                    </option>
+                </select>
+            </div>
+            <div class="ui-field">
+                <textarea class="ui-textarea ui-textarea__side" placeholder="Ваше сообщение" id="message" name="message"></textarea>
+            </div>
+            <div class="ui-send">
+                <label class="ui-send-label">                    
+                    <span class="ui-send-trigger">Прикрепить CV</span>                        
+                    <input type="file" accept=".pdf, .doc, .docx" class="ui-input-file" id="file" name="file">
+                </label>
+                <span class="ui-send-formats">(.pdf, .docx, .doc)</span>
+            </div>                    
+            <button class="ui-btn ui-btn-block text-uppercase">
+                Отправить резюме
+            </button>
+        </form>
+    </div>
+
+    
+    <script>
+        $(document).ready(function () {
+            $('.ui-select, .ui-checkbox').styler();
+            $.validator.messages.required = 'Пожалуйста, заполните это поле';
+    
+            $(".form__side").validate({
+                submitHandler: function(form, event) {
+                    if ($('#file')[0].files.length === 0) {
+                        event.preventDefault();                    
+                        $('#file').valid();                        
+                        return false; 
+                    }
+            
+                    event.preventDefault();
+                    form.reset();
+                },
+                rules: { 
+                    category: { required: true },
+                    message: { required: true },
+                    file: { required: true }
+                },
+            });
+        });
+    </script>
+</div>

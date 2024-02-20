@@ -1114,6 +1114,9 @@ table {
 }
 .ui-btn-block {
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .ui-btn-small {
   font-size: 16px;
@@ -5162,20 +5165,46 @@ table {
   color: #005299;
 }
 .article ul {
-  list-style: disc;
-  margin-bottom: 22px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .article ul li {
-  list-style: disc;
-  list-style-position: inside;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 24px;
+}
+.article ul li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.article ul li::before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #303030;
 }
 .article ol {
-  list-style: decimal;
-  margin-bottom: 22px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  counter-reset: my-counter;
 }
 .article ol li {
-  list-style: decimal;
-  list-style-position: inside;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 22px;
+}
+.article ol li:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.article ol li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  counter-increment: my-counter;
+  content: counter(my-counter) ". ";
 }
 .article__main {
   border-bottom: 1px solid #E2F1EE;
@@ -6057,6 +6086,40 @@ table {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 32px 32px;
+}
+
+.popup-resume {
+  max-width: 510px;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 1140px) {
+  .popup-resume {
+    max-width: 425px;
+  }
+}
+.popup-resume-inner {
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 1140px) {
+  .popup-resume-inner {
+    max-width: 300px;
+  }
+}
+.popup-resume .mfp-close {
+  font-size: 0;
+  background-image: url(../images/svg/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 32px;
+  right: 10px;
+  top: 0;
+  opacity: 1;
+}
+.popup-resume .mfp-close:hover {
+  opacity: 0.7;
 }
 
 .error-content {
