@@ -24,6 +24,10 @@
 			<path d="M19.5 3.634a1 1 0 0 1 0 1.732l-3.75 2.165a1 1 0 0 1-1.5-.866v-4.33a1 1 0 0 1 1.5-.866l3.75 2.165z" fill="#328FDF"></path><path stroke="#328FDF" d="M19 4.5H0"></path>
 		</symbol>
 	
+		<symbol id="arrow_green" viewBox="0 0 21 9">
+			<path d="M19.5 3.634a1 1 0 0 1 0 1.732l-3.75 2.165a1 1 0 0 1-1.5-.866v-4.33a1 1 0 0 1 1.5-.866l3.75 2.165z" fill="#88A49C"></path><path stroke="#88A49C" d="M19 4.5H0"></path>
+		</symbol>
+	
 		<symbol id="arrow_red" viewBox="0 0 21 9">
 			<path d="M19.5 3.634a1 1 0 0 1 0 1.732l-3.75 2.165a1 1 0 0 1-1.5-.866v-4.33a1 1 0 0 1 1.5-.866l3.75 2.165z" fill="#F58C8C"></path><path stroke="#F58C8C" d="M19 4.5H0"></path>
 		</symbol>

@@ -35,22 +35,20 @@ const FARBA = {
 document.addEventListener('DOMContentLoaded', () => {
   $('.ui-select, .ui-checkbox').styler();
 
-  // боковая панель навигации
+  // боковая панель навигации 
   (function() {
-    const lis = document.querySelectorAll('.nav > ul > li > a');
+    const links = document.querySelectorAll('.nav li > a');
 
-    lis.forEach(a => {
-      a.addEventListener('click', (event) => {
-        const href = a.getAttribute('href');
-
-        if (href === '#' || href === 'javascript:void(0)') {
-          event.preventDefault();            
+    links.forEach(link => {
+      link.addEventListener('click', e => {        
+        const li = link.closest('li');
+        
+        if (li.querySelector('ul')) {
+          e.preventDefault();
+          li.classList.toggle('active');
         }
-
-        const parent = a.parentNode;
-        parent.classList.toggle('active');
-      })
-    })
+      });
+    });
   })();
 
   // открытие учетной записи

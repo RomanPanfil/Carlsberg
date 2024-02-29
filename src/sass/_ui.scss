@@ -570,6 +570,7 @@ table {
 	display: flex;
 	align-items: center;
 	gap: 12px;
+	width: max-content;
 
 	@media (max-width: 1366px) {
 		@include fz(14);

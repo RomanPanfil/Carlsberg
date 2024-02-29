@@ -1072,6 +1072,9 @@ table {
       -ms-flex-align: center;
           align-items: center;
   gap: 12px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 @media (max-width: 1366px) {
   .ui-btn {

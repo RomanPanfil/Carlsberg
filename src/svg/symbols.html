@@ -180,6 +180,10 @@
 			<path d="M19.5 3.634a1 1 0 0 1 0 1.732l-3.75 2.165a1 1 0 0 1-1.5-.866v-4.33a1 1 0 0 1 1.5-.866l3.75 2.165z" fill="#328FDF"></path><path stroke="#328FDF" d="M19 4.5H0"></path>
 		</symbol>
 	
+		<symbol id="arrow_green" viewBox="0 0 21 9">
+			<path d="M19.5 3.634a1 1 0 0 1 0 1.732l-3.75 2.165a1 1 0 0 1-1.5-.866v-4.33a1 1 0 0 1 1.5-.866l3.75 2.165z" fill="#88A49C"></path><path stroke="#88A49C" d="M19 4.5H0"></path>
+		</symbol>
+	
 		<symbol id="arrow_red" viewBox="0 0 21 9">
 			<path d="M19.5 3.634a1 1 0 0 1 0 1.732l-3.75 2.165a1 1 0 0 1-1.5-.866v-4.33a1 1 0 0 1 1.5-.866l3.75 2.165z" fill="#F58C8C"></path><path stroke="#F58C8C" d="M19 4.5H0"></path>
 		</symbol>
@@ -267,7 +271,7 @@
 </svg>
 
 <header>
-    <h1 id="logo">Gulp SVG Sprites <small>(27 icons in &lt;symbol&gt; mode)</small></h1>
+    <h1 id="logo">Gulp SVG Sprites <small>(28 icons in &lt;symbol&gt; mode)</small></h1>
     <h4>Files Generated:</h4>
     <ol>
         <li><a href="svg/symbols.svg">svg/symbols.svg</a></li>
@@ -384,6 +388,23 @@
             <button onclick="invertBackground('icon-box-arrow_blue')">Invert Background</button>
             <div class="snippet-popover" id="snippet-arrow_blue">
                 <pre><code>&lt;svg class=&quot;icon arrow_blue&quot;&gt;&lt;use xlink:href=&quot;#arrow_blue&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+                <button onclick="hidePopover()">Close</button>
+            </div>
+        </li>
+        
+
+        <li title="arrow_green">
+            <div class="icon-box" id="icon-box-arrow_green">
+                <svg class="icon arrow_green">
+                    <use xlink:href="#arrow_green" />
+                </svg>
+            </div>
+            <h2>arrow_green</h2>
+            <button onclick="showPopover('snippet-arrow_green')">Show Snippet</button>
+            <br/>
+            <button onclick="invertBackground('icon-box-arrow_green')">Invert Background</button>
+            <div class="snippet-popover" id="snippet-arrow_green">
+                <pre><code>&lt;svg class=&quot;icon arrow_green&quot;&gt;&lt;use xlink:href=&quot;#arrow_green&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
                 <button onclick="hidePopover()">Close</button>
             </div>
         </li>
