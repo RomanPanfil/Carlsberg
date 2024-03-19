@@ -1211,14 +1211,16 @@
                     $.validator.messages.required = 'Пожалуйста, заполните это поле';
             
                     $(".form__side").validate({
-                      submitHandler: function(form, event) {
-                        if ($('#file')[0].files.length === 0) {
-                          event.preventDefault();                    
-                          $('#file').valid();                        
+                      submitHandler: function(form, event) {                   
+                        if ($('#file')[0].files.length === 0) {                       
+                          event.preventDefault();
+                          $('.ui-send-trigger').addClass('error');             
+                          $('#file').valid();                                                  
                           return false; 
                         }
                 
                         event.preventDefault();
+                        document.querySelector('.ui-send-trigger').textContent = 'Прикрепть CV';  
                         form.reset();
                       },
                       rules: { 
@@ -1226,6 +1228,22 @@
                         message: { required: true },
                         file: { required: true }
                       },
+                    });
+
+                    $('#file').change(function() {
+                      if ($('#file')[0].files.length === 0) {
+                        $('.ui-send-trigger').addClass('error');
+                      } else {
+                        $('.ui-send-trigger').removeClass('error');
+                      }
+                    });
+
+                    $('.ui-btn').click(function() {
+                      if ($('#file')[0].files.length === 0) {
+                        $('.ui-send-trigger').addClass('error');
+                      } else {                          
+                        $('.ui-send-trigger').removeClass('error');
+                      }
                     });
                   });
                 </script>

@@ -1206,6 +1206,10 @@ table {
 		background: $bg_green;
 		padding: 4px 8px;
 
+		&.error {
+			color: $error;
+		}
+
 		@media (max-width: 1366px) {
 			@include fz(12);
 			padding: 3px 6px;

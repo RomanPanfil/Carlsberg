@@ -1765,6 +1765,9 @@ table {
   background: #E2F1EE;
   padding: 4px 8px;
 }
+.ui-send-trigger.error {
+  color: #FF0000;
+}
 @media (max-width: 1366px) {
   .ui-send-trigger {
     font-size: 12px;
