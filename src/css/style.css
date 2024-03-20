@@ -1398,6 +1398,9 @@ table {
     height: 72px;
   }
 }
+.ui-textarea.error {
+  border-color: #FF0000;
+}
 
 .jq-selectbox {
   display: block;

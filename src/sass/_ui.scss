@@ -837,6 +837,10 @@ table {
 			height: 72px;
 		}
 	}
+
+	&.error {
+		border-color: $error;
+	}
 }
 
 
